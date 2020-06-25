@@ -29,3 +29,7 @@
 
 ```npm install jquery```
 
+3/ npm i react-tabs
+
+```npm install --save react-tabs```
+
