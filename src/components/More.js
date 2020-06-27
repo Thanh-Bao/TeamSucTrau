@@ -145,9 +145,46 @@ class More extends Component {
             </div>
           </div>
         </div>
-
         {/* /////////// end carousel ///////////////////////// */}
-
+        {/* /////////// feedback /////////////////////////////*/}
+        <div className="bg-contact100" style={{ backgroundImage: 'url("images/bg-01.jpg")' }}>
+          <div className="container-contact100">
+            <div className="wrap-contact100">
+              <div className="contact100-pic js-tilt" data-tilt>
+                <img src="images/img-01.png" alt="IMG" />
+              </div>
+              <form className="contact100-form validate-form">
+                <span className="contact100-form-title">
+                  Send us feedback
+                </span>
+                <div className="wrap-input100 validate-input" data-validate="Name is required">
+                  <input className="input100" type="text" name="name" placeholder="Name" />
+                  <span className="focus-input100" />
+                  <span className="symbol-input100">
+                    <i className="fa fa-user" aria-hidden="true" />
+                  </span>
+                </div>
+                <div className="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                  <input className="input100" type="text" name="email" placeholder="Email" />
+                  <span className="focus-input100" />
+                  <span className="symbol-input100">
+                    <i className="fa fa-envelope" aria-hidden="true" />
+                  </span>
+                </div>
+                <div className="wrap-input100 validate-input" data-validate="Message is required">
+                  <textarea className="input100" name="message" placeholder="Message" defaultValue={""} />
+                  <span className="focus-input100" />
+                </div>
+                <div className="container-contact100-form-btn">
+                  <button className="contact100-form-btn">
+                    Send
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        {/* /////////// end feedback /////////////////////////////*/}
         <div className="container-fluid LienHeComponent pt-3 px-5">
           <div className="row">
             <div className="col-lg-6 mb-4 pl-5">

@@ -10,73 +10,103 @@
 #                                  |_|            |___/                                 |___/                                     #
 #                                                                                                                                 #
 ##################################################################################################################################  -->
-
-
-
 <!doctype html>
 <html lang="en">
 
-<head>
-  <!-- facebook chat messager  -->
-  <script src="https://app.respond.io/facebook/chat/plugin/34143/101397341588589" async></script>
-  <link rel="icon" href="%PUBLIC_URL%/media/logo.png" type="image/icon type">
-  <title>Tin tức bất động sản</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- for SEO and marketing -->
-  <meta name="description" content="tin tức mới nhất về bất động sản Việt Nam, tpHCM, Hà Nội">
-  <meta name="author" content="Trần Thanh Bảo - Bảo Bảo">
-  <meta name="keywords" content="bất động sản, nhà đất, giá nhà đất, tin tức bất động sản">
-  <!-- font lato & Fredoka One _ google CDN -->
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lato:wght@900&display=swap" rel="stylesheet">
-  <!-- BootstrapCDN -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <!-- font awesome CDN -->
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-  <!-- style for Navigation bar -->
-  <link rel=" stylesheet" href="JS_CSS/CSS_NavigationBar.css">
-  <!-- style for header ( video ) Home page  -->
-  <link rel="stylesheet" href="JS_CSS/CSS_header_home.css">
-  <!-- style for footer -->
-  <link rel="stylesheet" href="JS_CSS/CSS_Footer.css">
-</head>
+  <head>
+    <!-- facebook chat messager  -->
+    <script
+      src="https://app.respond.io/facebook/chat/plugin/34143/101397341588589"
+      async></script>
+    <link rel="icon" href="%PUBLIC_URL%/media/logo.png" type="image/icon type">
+    <title>Tin tức bất động sản</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+      shrink-to-fit=no">
+    <!-- for SEO and marketing -->
+    <meta name="description" content="tin tức mới nhất về bất động sản Việt Nam,
+      tpHCM, Hà Nội">
+    <meta name="author" content="Trần Thanh Bảo - Bảo Bảo">
+    <meta name="keywords" content="bất động sản, nhà đất, giá nhà đất, tin tức
+      bất động sản">
+    <!-- font lato & Fredoka One _ google CDN -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lato:wght@900&display=swap"
+      rel="stylesheet">
+    <!-- BootstrapCDN -->
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- font awesome CDN -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet">
+    <link rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <!-- style for Navigation bar -->
+    <link rel="stylesheet" href="JS_CSS/CSS_NavigationBar.css">
+    <!-- style for header ( video ) Home page  -->
+    <link rel="stylesheet" href="JS_CSS/CSS_header_home.css">
+    <!-- style for footer -->
+    <link rel="stylesheet" href="JS_CSS/CSS_Footer.css">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css"
+      href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css"
+      href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css"
+      href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css"
+      href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
 
-<body>
-  <noscript>Vui lòng bật javascript trên trình duyệt của bạn để tiếp tục truy cập website</noscript>
-  <!-- Chart for About -->
-  <script src="https://www.amcharts.com/lib/4/core.js"></script>
-  <script src="https://www.amcharts.com/lib/4/charts.js"></script>
-  <script src="https://www.amcharts.com/lib/4/themes/material.js"></script>
-  <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
-  <!-- /////////// for timeLine ///////////// -->
-  <script src="https://www.amcharts.com/lib/4/plugins/timeline.js"></script>
-  <script src="JS_CSS/JS_ChartAbout.js"></script>
-  <!-- SDK facebook -->
-  <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous"
-    src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0"></script>
-  <!-- reactJS component -->
-  <div id="TinTucBatDongSan"></div>
-  <!-- jQueryCDN -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <!-- PopperCDN -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-  <!-- JS for Bootstrap (CDN) -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <!-- effect for navigation Bar -->
-  <script src="JS_CSS/JS_NavigationBar.js"></script>
-  <!-- for google translate plugin -->
-  <script type="text/javascript">
+  <body>
+    <noscript>Vui lòng bật javascript trên trình duyệt của bạn để tiếp tục truy
+      cập website</noscript>
+    <!-- Chart for About -->
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/material.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+    <!-- /////////// for timeLine ///////////// -->
+    <script src="https://www.amcharts.com/lib/4/plugins/timeline.js"></script>
+    <script src="JS_CSS/JS_ChartAbout.js"></script>
+    <!-- SDK facebook -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+      src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0"></script>
+    <!-- reactJS component -->
+    <div id="TinTucBatDongSan"></div>
+    <!-- jQueryCDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- PopperCDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <!-- JS for Bootstrap (CDN) -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- effect for navigation Bar -->
+    <script src="JS_CSS/JS_NavigationBar.js"></script>
+    <!-- for google translate plugin -->
+    <script type="text/javascript">
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
     }
-  </script>
-  <script type="text/javascript"
-    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-  <!-- // websitevoice -->
-  <script async src="https://widget.websitevoice.com/WrE_tUyd0p3Yk2YxPKlnmA"></script>
-  <script>
+    </script>
+    <script type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!-- // websitevoice -->
+    <script async src="https://widget.websitevoice.com/WrE_tUyd0p3Yk2YxPKlnmA"></script>
+    <script>
     window.wvData = window.wvData || {}; function wvtag(a, b) { wvData[a] = b; }
     wvtag('id', 'WrE_tUyd0p3Yk2YxPKlnmA');
     wvtag('language', 'vi-VN');
@@ -85,8 +115,34 @@
       showTime: true,
       buttonText: 'Đọc bài viết'
     });
-  </script>
+    </script>
+      <!--===============================================================================================-->
+      <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+      <!--===============================================================================================-->
+      <script src="vendor/bootstrap/js/popper.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+      <!--===============================================================================================-->
+      <script src="vendor/select2/select2.min.js"></script>
+      <!--===============================================================================================-->
+      <script src="vendor/tilt/tilt.jquery.min.js"></script>
+      <script>
+        $('.js-tilt').tilt({
+          scale: 1.1
+        })
+      </script>
+      <!--===============================================================================================-->
+      <script src="js/main.js"></script>
 
-</body>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async
+        src="https://www.googletagmanagerF.com/gtag/js?id=UA-23581568-13"></script>
+      <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-23581568-13');
+    </script>
+  </body>
 
 </html>
