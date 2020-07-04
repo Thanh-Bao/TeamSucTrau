@@ -30,7 +30,7 @@ class RouterURL extends Component {
         <Route exact path="/search" component={Search} />
         <Route exact path="/about" component={About} />
         <Route exact path="/more" component={More} />
-        <Route exact path="/login" component={TabLogin} />
+        <Route exact path="" component={TabLogin} />
 
         {/* chuyển đến trang xem full bảng tin */}
         {data.map((value, index) => {

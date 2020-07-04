@@ -79,7 +79,7 @@ class NavigationBar extends Component {
                         </li>
                       </a>
                       {/* activeClassName="current_content" */}
-                      <a className="nav-link" href="login">
+                      <a className="btn nav-link size-btn" data-toggle="modal" data-target="#myModal">
                         <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                           <span>
                             <i className="fa fa-sign-in"></i> Login
