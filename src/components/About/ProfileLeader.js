@@ -51,22 +51,26 @@ class Profile extends Component {
             <div className="social-container">
               <ul className="social-icons">
                 <li>
-                  <a href="https://baonlu.com">
+                  <a href="https://baonlu.com"
+                  target="_blank">
                     <i className="fa fa-link"  id="iconLink"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.facebook.com/thanhbao1122">
+                  <a href="https://www.facebook.com/thanhbao1122"
+                  target="_blank">
                     <i className="fa fa-facebook" id="iconFacebook"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.youtube.com/channel/UCeZIUE4l4PJREEXD5P7hoNg/featured">
+                  <a href="https://www.youtube.com/channel/UCeZIUE4l4PJREEXD5P7hoNg/featured"
+                  target="_blank">
                     <i className="fab fa-youtube" id="iconYoutube"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="https://github.com/Thanh-Bao">
+                  <a href="https://github.com/Thanh-Bao"
+                  target="_blank">
                     <i className="fa fa-github"></i>
                   </a>
                 </li>

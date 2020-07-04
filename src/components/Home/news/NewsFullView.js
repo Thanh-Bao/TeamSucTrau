@@ -17,8 +17,18 @@ import "../../CSS/NewsFullView.css";
 class NewsFullView extends Component {
   render() {
     return (
+      <div>
+<div id="align-top"></div>
+      
+<ul id="breadcrumb">
+        <li><a href="/"><span class="fas fa-globe"> </span></a></li>
+        <li><a href="/"><span class="icon icon-beaker"> </span> Home</a></li>
+        <li><a  className="disabledHoverBC"><span class="icon icon-double-angle-right"></span>{"Bản tin : "+ this.props.partURL_plugin_fb}</a></li>
+        <li></li>
+    </ul>
+
       <div className="container text-justify px-3 contentNewTopic">
-        <div id="align-top"></div>
+        
         <div className="borderNews px-4 py-4">
           <div className="row">
             <div className="col-lg-12 col-sm-12 mb-12 d-flex justify-content-end">
@@ -60,7 +70,7 @@ class NewsFullView extends Component {
           <div className="col-lg-12 col-sm-12 mb-12 ">
             <a
               href={this.props.previous}
-              className="btn btn-success py-3 pt-4 btnSwitch  btnPrevious "
+              className="btn btn-info py-3 pt-4 btnSwitch  btnPrevious "
             >
               <h5>
                 <i className="far fa-arrow-alt-circle-left"></i> Previous
@@ -69,7 +79,7 @@ class NewsFullView extends Component {
 
             <a
               href={this.props.next}
-              className="btn btn-success  py-3 px-4 pt-4 btnSwitch btnNext"
+              className="btn btn-info  py-3 px-4 pt-4 btnSwitch btnNext"
             >
               <h5>
                 Next <i className="far fa-arrow-alt-circle-right"></i>
@@ -91,6 +101,7 @@ class NewsFullView extends Component {
             ></div>
           </div>
         </div>
+      </div>
       </div>
     );
   }

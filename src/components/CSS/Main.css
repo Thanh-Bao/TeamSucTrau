@@ -90,15 +90,11 @@ body {
 
 /* for Search page */
 
-.SearchPage .title {
-  margin-top: 10%;
-}
-
 .getUserLocationTable {
   width: 80%;
   margin: auto;
   background-color: rgba(7, 7, 7, 0.02);
-  margin-top: 5%;
+  margin-top: -4%;
 }
 .getUserLocationTable td {
   font-size: 1.04em;
@@ -121,13 +117,14 @@ tr {
 
 .searchResultBox {
   border: 1px solid;
-  border-radius: 30px;
+  border-radius: 10px;
   border-color: rgba(13, 14, 14, 0.452);
 }
 .searchTocpicResultIMG {
   margin-top: -7%;
+  margin-bottom: 1%;
   width: 90%;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 /* // for loading icon */
@@ -197,8 +194,6 @@ tr {
 .introAbout {
   margin: 0% 10% 9% 10%;
 }
-
-
 
 .LienHeComponent {
   border: 1px solid;
@@ -306,4 +301,35 @@ h2::after {
 #responsive-mockup {
   width: 80%;
   height: auto;
+}
+
+/* /////////// for block news /////////// */
+
+#img-wrapperNewsThumbnail {
+  overflow: hidden;
+}
+.imgNewsThumbnail:hover {
+  -ms-transform: scale(1.28); /* IE 9 */
+  -webkit-transform: scale(1.28); /* Safari 3-8 */
+  transform: scale(1.28);
+}
+.imgNewsThumbnail {
+  -ms-transform: scale(1); /* IE 9 */
+  -webkit-transform: scale(1); /* Safari 3-8 */
+  transform: scale(1);
+  transition: 0.7s;
+}
+
+.title-card-link {
+  color: rgba(26, 25, 25, 0.979);
+}
+.title-card-link:hover {
+  text-decoration: none;
+}
+
+/* /////////////////
+ */
+
+.disabledHoverBC {
+  pointer-events: none;
 }
