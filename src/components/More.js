@@ -10,33 +10,22 @@
 ################################################################################################################################## */
 
 import React, { Component } from "react";
+import Feedback from "./Feedback/Feedback";
 
 class More extends Component {
   render() {
     return (
       <div>
         <div id="align-top"></div>
-        <ul id="breadcrumb">
-          <li>
-            <a href="/">
-              <span class="fas fa-globe"> </span>
-            </a>
-          </li>
-          <li>
-            <a className="disabledHoverBC">
-              <span class="fas fa-info"> </span> More
-            </a>
-          </li>
-          <li></li>
-        </ul>
+
         <div className="text-center introAbout">
           <h1>Tầm nhìn chiến lược và định hướng trong tương lai</h1>
           <p>
-            Công ty TNHH bất động sản Nông Lâm không chỉ là nền tảng cung cấp
-            tin tức về thị trường Bất động sản chính xác và nhanh chóng nhất
-            Việt Nam, trong thời gian tới Công ty TNHH bất động sản Nông Lâm sẽ
-            phát triển thêm nền tảng môi giới bất động sản, có nhiệm vụ kết nối
-            các nhà đầu tư với nhau trên khắp mọi miền tổ quốc.
+            Công ty TNHH bất động sản Nông Lâm không chỉ là nền tảng cung cấp tin
+            tức về thị trường Bất động sản chính xác và nhanh chóng nhất Việt
+            Nam, trong thời gian tới Công ty TNHH bất động sản Nông Lâm sẽ phát
+            triển thêm nền tảng môi giới bất động sản, có nhiệm vụ kết nối các
+            nhà đầu tư với nhau trên khắp mọi miền tổ quốc.
           </p>
         </div>
         <h3 className="text-center">
@@ -48,12 +37,17 @@ class More extends Component {
           <div className="row">
             <div className="col-lg-12 mb-4 text-center">
               <h3>THIẾT KẾ RESPONSIVE TỐI ƯU CHO MOBILE</h3>
-              <img id="responsive-mockup" src="media/responsive.png"></img>
+              <img
+                id="responsive-mockup"
+                src="media/responsive.png"
+              ></img>
             </div>
           </div>
         </div>
 
-        <h3 className="text-center ">QUÁ TRÌNH HÌNH THÀNH VÀ PHÁT TRIỂN</h3>
+        <h3 className="text-center ">
+          QUÁ TRÌNH HÌNH THÀNH VÀ PHÁT TRIỂN
+        </h3>
         <div id="chartdiv2"></div>
         {/* /////////// begin carousel ///////////////////////// */}
         <div className="container mt-5">
@@ -80,7 +74,10 @@ class More extends Component {
                 <div className="carousel-inner feedBack ">
                   <div className="item carousel-item active">
                     <div className="img-box">
-                      <img src="media/avatarDien.jpg" alt="" />
+                      <img
+                        src="media/avatarDien.jpg"
+                        alt=""
+                      />
                     </div>
                     <p className="testimonial text-justify">
                       Tin tức cập nhật rất nhanh chóng, độ chính xác cao. Nội
@@ -95,7 +92,10 @@ class More extends Component {
 
                   <div className="item carousel-item">
                     <div className="img-box">
-                      <img src="media/avatarPhuc.jpg" alt="" />
+                      <img
+                        src="media/avatarPhuc.jpg"
+                        alt=""
+                      />
                     </div>
                     <p className="testimonial text-justify">
                       Nền tảng cung cấp tin tức bất động sản giúp mọi người dễ
@@ -110,7 +110,10 @@ class More extends Component {
 
                   <div className="item carousel-item">
                     <div className="img-box">
-                      <img src="media/avatarDanh.jpg" alt="" />
+                      <img
+                        src="media/avatarDanh.jpg"
+                        alt=""
+                      />
                     </div>
                     <p className="testimonial text-justify">
                       Giao diện thân thiện với trải nghiệm người dùng, nền tảng
@@ -143,101 +146,10 @@ class More extends Component {
             </div>
           </div>
         </div>
-
         {/* /////////// end carousel ///////////////////////// */}
-
-        {/* ////////////////////start modal feedBack ///////////////////////////// */}
-
-        <div className="container mb-5 pb-5">
-          <div className="row">
-            <div className="col-12  text-center">
-              <button
-                type="button"
-                className="btn btn-primary"
-                data-toggle="modal"
-                data-target="#exampleModal"
-                data-whatever="@mdo"
-              >
-                <i class="far fa-hand-point-right"></i> Your feedback{" "}
-                <i class="far fa-hand-point-left"></i>
-              </button>
-              <div
-                className="modal fade"
-                id="exampleModal"
-                tabIndex={-1}
-                role="dialog"
-                aria-labelledby="exampleModalLabel"
-                aria-hidden="true"
-              >
-                <div className="modal-dialog">
-                  <div className="modal-content">
-                    <div className="modal-header">
-                      <h4 className="text-center">
-                        Your feedback is important to us !
-                      </h4>
-                      <button
-                        type="button"
-                        className="close"
-                        data-dismiss="modal"
-                        aria-label="Close"
-                      >
-                        <span aria-hidden="true">
-                          <i className="fas fa-times-circle closeBtn"></i>
-                        </span>
-                      </button>
-                    </div>
-                    <div className="modal-body text-left">
-                      <form>
-                        <div className="form-group">
-                          <label
-                            htmlFor="recipient-name"
-                            className="col-form-label "
-                          >
-                            Name :
-                          </label>
-                          <input
-                            type="text"
-                            className="form-control"
-                            id="recipient-name"
-                          />
-                        </div>
-                        <div className="form-group">
-                          <label
-                            htmlFor="message-text"
-                            className="col-form-label"
-                          >
-                            Message:
-                          </label>
-                          <textarea
-                            className="form-control"
-                            id="message-text"
-                            defaultValue={""}
-                          />
-                        </div>
-                      </form>
-                    </div>
-                    <div className="modal-footer">
-                      <button
-                        type="button"
-                        className="btn btn-secondary"
-                        data-dismiss="modal"
-                      >
-                        Close
-                      </button>
-                      <button type="button" className="btn btn-primary" data-dismiss="modal">
-                        <i class="far fa-paper-plane"></i> Send
-                      </button>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* ////////////////////end modal feedBack ///////////////////////////// */}
-
+        {/* /////////// feedback /////////////////////////////*/}
+        <Feedback/>
+        {/* /////////// end feedback /////////////////////////////*/}
         <div className="container-fluid LienHeComponent pt-3 px-5">
           <div className="row">
             <div className="col-lg-6 mb-4 pl-5">

@@ -49,7 +49,7 @@ class NavigationBar extends Component {
                     <ul className="navbar-nav ml-auto py-4 py-md-0">
                       <div
                         id="google_translate_element"
-                        className="nav-link mt-1"
+                        className="nav-link"
                       ></div>
 
                       {/* activeClassName="current_content" */}
@@ -78,7 +78,14 @@ class NavigationBar extends Component {
                           </span>
                         </li>
                       </a>
-
+                      {/* activeClassName="current_content" */}
+                      <a className="nav-link" href="login">
+                        <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                          <span>
+                            <i className="fa fa-sign-in"></i> Login
+                          </span>
+                        </li>
+                      </a>
                       {/* activeClassName="current_content" */}
                       <a className="nav-link" href="more">
                         <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
@@ -87,6 +94,7 @@ class NavigationBar extends Component {
                           </span>
                         </li>
                       </a>
+                      
                     </ul>
                   </div>
                 </nav>

@@ -13,13 +13,14 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "./Home/Home.js";
-import Search from "./search/Search.js";
+import Search from "./Search.js";
 import About from "./About/About.js";
 import More from "./More.js";
 import data from "../SIMULATION_DATABASE/data_BlockNews.json";
 import FVdata from "../SIMULATION_DATABASE/data_NewsFullView.json";
 // import component xem full bảng tin
 import NewsFullView from "./Home/news/NewsFullView.js";
+import TabLogin from "../login/TabLogin.js";
 
 class RouterURL extends Component {
   render() {
@@ -29,6 +30,7 @@ class RouterURL extends Component {
         <Route exact path="/search" component={Search} />
         <Route exact path="/about" component={About} />
         <Route exact path="/more" component={More} />
+        <Route exact path="/login" component={TabLogin} />
 
         {/* chuyển đến trang xem full bảng tin */}
         {data.map((value, index) => {

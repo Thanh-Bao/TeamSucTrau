@@ -9,6 +9,8 @@
 #                                  |_|            |___/                                 |___/                                     #                                                                                                                                 #
 ################################################################################################################################## */
 
+
+
 import React, { Component } from "react";
 import Button_Quick_view from "./Button_Quick_view.js";
 
@@ -24,22 +26,17 @@ class News_Block extends Component {
     return (
       <div className="col-lg-4 col-sm-6 mb-4">
         <div className="card h-100 News_Block">
-          <div id="img-wrapperNewsThumbnail" href="#">
-            <a href={this.props.block_NavLinkFull}>
-              <img
-                className="card-img-top imgNewsThumbnail"
-                src={this.props.block_img_src}
-                alt="image from bất động sản Nông Lâm 2020"
-              />
-            </a>
+          <div href="#">
+            <img
+              className="card-img-top"
+              src={this.props.block_img_src}
+              alt="image from bất động sản Nông Lâm 2020"
+            />
           </div>
-
           <div className="card-body News_Block_background">
-            <a href={this.props.block_NavLinkFull} className="title-card-link">
-              <h4 className="card-title">
-                <div href="#">{this.props.block_title}</div>
-              </h4>
-            </a>
+            <h4 className="card-title">
+              <div href="#">{this.props.block_title}</div>
+            </h4>
             <p className="card-text">{this.props.block_small_content}</p>
             <div className="button_group">
               <Button_Quick_view

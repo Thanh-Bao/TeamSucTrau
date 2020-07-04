@@ -17,8 +17,6 @@
 }
 
 
-
-
 .card {
   border: 1px solid;
   max-width: 340px;
@@ -202,4 +200,3 @@
   transform: scale(1.6);
   -webkit-text-fill-color: #fff;
 }
-
