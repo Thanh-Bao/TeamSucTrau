@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import Forget from './Forget';
 
-
-class Login extends Component {
+class Register extends Component {
     render() {
         return (
-            <div className="container">
+            <div>
+                   <div className="container">
             <div className="row">
                <div class="col">
         <a href="#" class="fb btn">
@@ -18,36 +17,38 @@ class Login extends Component {
           </i> Login with Google+
         </a>
       </div>
-        
+      
       <div className="col bg-login sp-login">
      
-        <h3 className="text-center cl-login"><b>Login</b></h3>
+        <h3 className="text-center cl-login"><b>Register</b></h3>
               <div className="input-container">
       
-                  <input className="input-field" type="text" placeholder="Email/Phone Number" name="usrnm" />
-                  <i className="fa fa-user icon" />
+                  <input className="input-field" type="text" placeholder="Email/Phone number" name="usrnm" />
+                  
               </div>
               <div className="input-container">
       
                     <input type="password" name="password" placeholder="Password" required />
-                        <i class="fa fa-key icon"></i>
-                
+                       
               </div>
-             <div className = "row"><label className = "col-1 "><input type ="checkbox"/></label>
-             <label className = "col-6 remember">Remember me</label>
-             </div>
-              
+              <div className="input-container">
+      
+                     <input type="password" name="password" placeholder="Repeat Password" required />
+         
+                </div>
+                
 
-        <input className="space-bot" type="submit" value="Login" />
+        <input  className="space-bot" type="submit" value="Register" />
         
         
       </div>
       
       </div>
-      
-  </div>
+   
+          </div>
+            </div>
         );
     }
 }
 
-export default Login;
+export default Register;
