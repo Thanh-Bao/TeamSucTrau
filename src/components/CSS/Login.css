@@ -1,19 +1,10 @@
 .space-top-lg{
     margin-top: 2cm;
 }
-body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  
-  
-  /* style inputs and link buttons */
-  input,
-  .btn {
+
+    /* style inputs and link buttons */
+  .inputLogin,
+  .btnLogin {
     width: 100%;
     padding: 12px;
     border: none;
@@ -26,7 +17,7 @@ body {
     text-decoration: none; /* remove underline from anchors */
   }
   
-  input:hover,
+  .inputLogin:hover,
   .btn:hover {
     opacity: 1;
   }
@@ -54,7 +45,7 @@ body {
     cursor: pointer;
   }
   
-  input[type=submit]:hover {
+  .inputLogin[type=submit]:hover {
     background-color:rgb(182, 67, 26);
   }
   
@@ -107,7 +98,7 @@ body {
   }
   
   /* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 650px) {
+  
     .col {
       width: 100%;
       margin-top: 0;
@@ -120,7 +111,7 @@ body {
         display: block;
         text-align: center;
       }
-  }
+  
   .bg-login{
       background-color: #DBDBDB;
   }
