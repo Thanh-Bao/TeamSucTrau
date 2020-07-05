@@ -10,7 +10,9 @@
   margin-top: 2%;
 }
 
-
+.BaoBao .card-cover{
+  background: rgba(1, 255, 14, 0.233);
+}
 
 .BaoBao .social-container {
   margin-top: 5%;

@@ -12,8 +12,11 @@
 
 
 import React, { Component } from "react";
+import "../CSS/NavigationBar.css";
 
 class NavigationBar extends Component {
+
+  
   render() {
     return (
       <div>
@@ -53,7 +56,7 @@ class NavigationBar extends Component {
                       ></div>
 
                       {/* activeClassName="current_content" */}
-                      <a className="nav-link" href="/">
+                      <a className="nav-link" href="/home">
                         <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                           <span>
                             <i className="fa fa-home"></i> Home
@@ -78,14 +81,7 @@ class NavigationBar extends Component {
                           </span>
                         </li>
                       </a>
-                      {/* activeClassName="current_content" */}
-                      <a className="btn nav-link size-btn" data-toggle="modal" data-target="#myModal">
-                        <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                          <span>
-                            <i className="fa fa-sign-in"></i> Login
-                          </span>
-                        </li>
-                      </a>
+
                       {/* activeClassName="current_content" */}
                       <a className="nav-link" href="more">
                         <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
@@ -94,7 +90,16 @@ class NavigationBar extends Component {
                           </span>
                         </li>
                       </a>
-                      
+
+                      <a className="nav-link loginButton " data-toggle="modal" data-target="#myModal">
+                        <li className=" btn btn-outline-primary  ml-md-4">
+                          <span>
+                            <i className="fa fa-sign-in"></i> Login
+                          </span>
+                        </li>
+                      </a>
+
+
                     </ul>
                   </div>
                 </nav>
@@ -105,6 +110,13 @@ class NavigationBar extends Component {
       </div>
     );
   }
+
+  
+
+  
 }
+
+
+
 
 export default NavigationBar;

@@ -11,12 +11,7 @@ class TabLogin extends Component {
         <div className="modal" id="myModal">
           <div className="modal-dialog modal-dialog-scrollable modal-xl">
             <div className="modal-content">
-              {/* Modal Header */}
-              <div className="modal-header">
-                <button type="button" className="close" data-dismiss="modal">
-                  ×
-                </button>
-              </div>
+             
               {/* Modal body */}
               <div className="modal-body">
                 <nav>
@@ -56,7 +51,7 @@ class TabLogin extends Component {
                       aria-controls="nav-contact"
                       aria-selected="false"
                     >
-                      <b>Forget</b>
+                      <b> Forget</b>
                     </a>
                   </div>
                 </nav>

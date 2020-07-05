@@ -1,7 +1,12 @@
- @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500|Jost:400,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500|Jost:400,500,600&display=swap");
 * {
   box-sizing: border-box;
 }
+
+.card-cover{
+  background: rgba(1, 255, 14, 0.335);
+}
+
 
 .card::-webkit-scrollbar {
   display: none;
@@ -19,6 +24,7 @@
 
 .card {
   border: 1px solid;
+  border-color: rgba(0, 0, 0, 0.205);
   max-width: 340px;
   margin: auto;
   overflow-y: auto;
@@ -58,14 +64,14 @@
 .card-avatar {
   width: 120px;
   height: 120px;
-  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.623);
   border-radius: 50%;
   object-position: center;
   object-fit: cover;
   position: absolute;
   bottom: 0;
   left: 50%;
-  border: 5px solid ;
+  border: 6px solid ;
   border-color: rgb(245, 248, 244);
   transform: translateX(-50%) translateY(-64px);
 }
@@ -101,7 +107,7 @@
   display: flex;
   padding-top: 10px;
   flex-direction: column;
-  background: linear-gradient(to top, #6062624d 0%, #f8f2f515 100%);
+  background: linear-gradient(to top, #ffffff4d 0%, #fdfdfd15 100%);
 }
 
 .card-subtitle {

@@ -9,11 +9,8 @@
 #                                  |_|            |___/                                 |___/                                     #                                                                                                                                 #
 ################################################################################################################################## */
 
-
-
 import React, { Component } from "react";
-import "../CSS/Profile.css";
-
+import "../../CSS/Profile.css";
 
 class Profile extends Component {
   render() {
@@ -22,16 +19,9 @@ class Profile extends Component {
         <div className="card-header">
           <div
             className="card-cover"
-            style={{
-              background:
-                "linear-gradient(to right, #17b439ea 20%, #05a3ff 100%)",
-            }}
+           
           ></div>
-          <img
-            className="card-avatar"
-            src={this.props.avatar}
-            alt="avatar"
-          />
+          <img className="card-avatar" src={this.props.avatar} alt="avatar" />
           <h1 className="card-fullname">{this.props.name}</h1>
           <h2 className="card-jobtitle">{this.props.MSSV}</h2>
         </div>
@@ -44,22 +34,26 @@ class Profile extends Component {
             <div class="social-container">
               <ul class="social-icons">
                 <li>
-                  <a href={this.props.webCaNhan}>
-                    <i class="fa fa-link" id="iconLink" ></i>
+                  <a href={this.props.webCaNhan}
+                  target="_blank">
+                    <i class="fa fa-link" id="iconLink"></i>
                   </a>
                 </li>
                 <li>
-                  <a href={this.props.twitter}>
+                  <a href={this.props.twitter}
+                  target="_blank">
                     <i className="fa fa-facebook" id="iconFacebook"></i>
                   </a>
                 </li>
                 <li>
-                  <a href={this.props.github}>
+                  <a href={this.props.github}
+                  target="_blank">
                     <i className="fab fa-youtube" id="iconYoutube"></i>
                   </a>
                 </li>
                 <li>
-                  <a href={this.props.fb}>
+                  <a href={this.props.fb}
+                  target="_blank">
                     <i className="fa fa-github"></i>
                   </a>
                 </li>

@@ -6,15 +6,15 @@ class Login extends Component {
       <div className="container">
         <div className="row">
           <div className="col colLogin">
-            <a href="#" className="fb btnLogin">
+            <button className="fb btnLogin">
               <i className="fa fa-facebook fa-fw"></i> Login with Facebook
-            </a>
-            <a href="#" className="twitter btnLogin">
+            </button>
+            <button className="twitter btnLogin">
               <i class="fa fa-twitter fa-fw"></i> Login with Twitter
-            </a>
-            <a href="#" className="google btnLogin">
-              <i class="fa fa-google fa-fw"></i> Login with Google+
-            </a>
+            </button>
+            <button className="google btnLogin">
+              <i class="fa fa-google fa-fw"></i> Login with Google
+            </button>
           </div>
 
           <div className="col colLogin colLogin bg-login sp-login">
@@ -28,7 +28,7 @@ class Login extends Component {
                 placeholder="Email/Phone Number"
                 name="usrnm"
               />
-              <i className="fa fa-user icon" />
+              <i className="fa fa-user iconLogin" />
             </div>
             <div className="input-container">
               <input
@@ -38,7 +38,7 @@ class Login extends Component {
                 placeholder="Password"
                 required
               />
-              <i className="fa fa-key icon"></i>
+              <i className="fa fa-key iconLogin"></i>
             </div>
             <div className="row">
               <label className="col-1 ">

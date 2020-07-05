@@ -7,15 +7,15 @@ class Register extends Component {
         <div className="container">
           <div className="row">
             <div className="col colLogin">
-              <a href="#" className="fb btnLogin">
-                <i className="fa fa-facebook fa-fw"></i> Login with Facebook
-              </a>
-              <a href="#" className="twitter btnLogin">
-                <i class="fa fa-twitter fa-fw"></i> Login with Twitter
-              </a>
-              <a href="#" className="google btnLogin">
-                <i class="fa fa-google fa-fw"></i> Login with Google+
-              </a>
+            <button className="fb btnLogin">
+              <i className="fa fa-facebook fa-fw"></i> Login with Facebook
+            </button>
+            <button className="twitter btnLogin">
+              <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+            </button>
+            <button className="google btnLogin">
+              <i class="fa fa-google fa-fw"></i> Login with Google
+            </button>
             </div>
 
             <div className="col colLogin bg-login sp-login">

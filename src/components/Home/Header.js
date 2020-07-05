@@ -9,9 +9,8 @@
 #                                  |_|            |___/                                 |___/                                     #                                                                                                                                 #
 ################################################################################################################################## */
 
-
-
 import React, { Component } from "react";
+import "../../CSS/header_home.css";
 
 class Header extends Component {
   render() {
@@ -25,10 +24,7 @@ class Header extends Component {
           muted="muted"
           loop="loop"
         >
-          <source
-            src="media/videoBackground.mp4"
-            type="video/mp4"
-          />
+          <source src="media/videoBackground.mp4" type="video/mp4" />
         </video>
 
         <div className="container h-100">
@@ -42,7 +38,6 @@ class Header extends Component {
             </div>
           </div>
         </div>
-        
       </header>
     );
   }

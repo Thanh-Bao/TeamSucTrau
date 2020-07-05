@@ -14,8 +14,8 @@ import { BrowserRouter as Router } from "react-router-dom";
 import NavigationBar from "./components/NavigationBar.js";
 import RouterURL from './components/RouterURL.js';
 import Footer from "./components/Footer.js";
-import "./components/CSS/Main.css";
-import "./components/CSS/Login.css";
+import "./CSS/Main.css";
+import "./CSS/Login.css"
 
 
 class Main extends Component {
