@@ -6,7 +6,7 @@ class Forget extends Component {
           <div>
              <div className="container">
                 <div className="row">
-                   <div className="col">
+                   <div className="col colLogin">
                            <a href="#" className="fb btnLogin">
                                <i className="fa fa-facebook fa-fw"></i> Login with Facebook
                            </a>
@@ -18,7 +18,7 @@ class Forget extends Component {
                            </a>
                      </div>
       
-                <div className="col bg-login sp-login">
+                <div className="col colLogin bg-login sp-login">
      
                           <h3 className="text-center cl-login"><b>Forget</b></h3>
                     <div className="input-container">

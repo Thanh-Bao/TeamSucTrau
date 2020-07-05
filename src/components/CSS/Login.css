@@ -18,9 +18,9 @@
   }
   
   .inputLogin:hover,
-  .btn:hover {
+  /* .btn:hover {
     opacity: 1;
-  }
+  } */
   
   /* add appropriate colors to fb, twitter and google buttons */
   .fb {
@@ -50,7 +50,7 @@
   }
   
   /* Two-column layout */
-  .col {
+  .colLogin {
     float: left;
     width: 50%;
     margin: auto;
@@ -59,11 +59,11 @@
   }
   
   /* Clear floats after the columns */
-  .row:after {
+  /* .row:after {
     content: "";
     display: table;
     clear: both;
-  }
+  } */
   
   /* vertical line */
   .vl {
@@ -99,10 +99,10 @@
   
   /* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
   
-    .col {
+    /* .col {
       width: 100%;
       margin-top: 0;
-    }
+    } */
     /* hide the vertical line */
     .vl {
       display: none;
@@ -165,10 +165,7 @@
 .remember{
   margin-left: -15px;
 }
-.bg{
-  background-color: #3C4D57;
-}
-  
+
 .size-btn{
   font-size: 17.4px;
 }

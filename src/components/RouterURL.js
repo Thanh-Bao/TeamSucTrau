@@ -20,7 +20,7 @@ import data from "../SIMULATION_DATABASE/data_BlockNews.json";
 import FVdata from "../SIMULATION_DATABASE/data_NewsFullView.json";
 // import component xem full bảng tin
 import NewsFullView from "./Home/news/NewsFullView.js";
-import TabLogin from "../login/TabLogin.js";
+import TabLogin from "./login/TabLogin.js";
 
 class RouterURL extends Component {
   render() {
