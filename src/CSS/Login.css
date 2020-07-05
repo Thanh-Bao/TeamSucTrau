@@ -57,13 +57,13 @@
 
 /* style the submit button */
 input[type="submit"] {
-  background-color: #fb2525;
+  background-color: #1428df;
   color: white;
   cursor: pointer;
 }
 
 .inputLogin[type="submit"]:hover {
-  background-color: rgb(182, 67, 26);
+  background-color: rgb(16, 32, 105);
 }
 
 /* Two-column layout */
